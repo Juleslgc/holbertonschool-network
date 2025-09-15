@@ -1,0 +1,13 @@
+#!/bin/bash
+# Checks if an argument is passed
+if [[ ${#} -ne 1 ]]; then
+    echo Usage: 5-is_the_host_on_the_network {IP_ADDRESS}
+    exit 1
+
+fi
+
+# Get the IP address
+IP=${1}
+
+# Ping the IP address 5 times
+ping -c 5 ${IP}
