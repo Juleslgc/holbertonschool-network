@@ -6,8 +6,5 @@ if [[ ${#} -ne 1 ]]; then
 
 fi
 
-# Get the IP address
-IP=${1}
-
 # Ping the IP address 5 times
-ping -c 5 ${IP}
+ping -c 5 ${1}
